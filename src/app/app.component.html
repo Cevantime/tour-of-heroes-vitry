@@ -1,27 +1,5 @@
 <h1>
-  Bienvenue dans la tour des {{ heroes.length }} héros!
+  Bienvenue dans la tour des héros!
 </h1>
-<!--for(var el of monTableau) {
-
-}-->
-<p>
-  Bonjour, {{ name | uppercase }}
-</p>
-<!-- Two way binding -->
-Votre nom :
-<input type="text" name="name" id="MyName" [(ngModel)]="name" />
-<app-heroes-list></app-heroes-list>
-<!-- <ul>
-  <li *ngFor="let hero of heroes">{{ hero }}
-    <span *ngIf="hero === name">(c'est moi !)</span>
-  </li>
-</ul> -->
-
-<!--$('button').on('click', function(){
-  // ...
-});-->
-Nom du héros
-<input type="text" name="heroToAdd" id="HeroName" [(ngModel)]="heroToAdd" />
-<button (click)="addHero()">Ajouter un héros</button>
 
 <router-outlet></router-outlet>
